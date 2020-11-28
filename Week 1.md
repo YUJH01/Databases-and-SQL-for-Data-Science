@@ -47,3 +47,17 @@ CREATE TABLE author (
 VARCHAR: variable length
 
 CHAR: fixed length
+
+
+
+Ex:
+
+```sql
+create table COUNTRY (
+	ID int NOT NULL,
+    CCODE char(2),
+    NAME varchat(60),
+    PRIMARY KEY (ID)
+)
+```
+
