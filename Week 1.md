@@ -53,11 +53,33 @@ CHAR: fixed length
 Ex:
 
 ```sql
+drop table COUNTRY; 
 create table COUNTRY (
 	ID int NOT NULL,
     CCODE char(2),
     NAME varchat(60),
     PRIMARY KEY (ID)
 )
+```
+
+
+
+### SELECT Statement
+
+```sql
+Select statement: Query
+Result from the query: Result set/table
+
+Select * from <tablename>		#selete all columns
+select column 1, column 2, column 3, ..., column n from tablename
+	WHERE column n =/>/</>=/<=/<> xxxx
+
+```
+
+Ex:
+
+```sql
+select book_id, title from Book
+	WHERE book_id = 'B1'
 ```
 
